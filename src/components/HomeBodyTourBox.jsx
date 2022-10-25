@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BodyTourBox = () => {
+const HomeBodyTourBox = () => {
   return (
     <>
     <h1 id="title"></h1>
@@ -49,4 +49,4 @@ const BodyTourBox = () => {
   )
 }
 
-export default BodyTourBox
+export default HomeBodyTourBox
