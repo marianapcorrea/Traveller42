@@ -1,14 +1,21 @@
-import Footer from './components/Footer'
-import Header from './components/Header'
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from './pages/HomePage'
+import ResumePage from './pages/ResumePage'
+import Body from './Layout'
+
+
 
 function App() {
  return (
-    <>
-        <Header/>
-        <HomePage/>
-        <Footer/>
-    </>
+    <Router>
+        <Body>
+            <Switch>
+                <Route exact path= '/' component={HomePage}/>
+                <Route exact path= '/resume' component={ResumePage}/>
+            </Switch>
+        </Body>
+    </Router>
  )
 }
 
