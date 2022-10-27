@@ -1,8 +1,9 @@
 import React from 'react'
+import FlightClass from './FlightClass'
 
-const HomeBodyTourBox = () => {
+const HomeTourBox = () => {
   return (
-    <section id="tourBox" className="w-1/2 mx-2 flex flex-col flex-1 justify-center items-center ">
+    <section id="tourBox" className="w-1/2 m-8  flex flex-col flex-1  justify-center items-center ">
     <div className=' flex justify-center flex-col items-center p-6  bg-cyan-800/80 h-fit rounded-2xl'>
     <h3 id="title" className="m-5 text-2xl font-extrabold font-mono ">Plan your dream travel!</h3>
     <form>
@@ -39,10 +40,7 @@ const HomeBodyTourBox = () => {
             <label for="">Children:</label>
         </span>
     </section>
-    <section id="flighCategory" className="flex my-4 text-stone-200 justify-between text-xl">
-        <label id="economic" ><input type="radio" name="radio" defaultChecked className="mr-2 accent-cyan-900 checked:bg-cyan-700 border-cyan-900 "/>Economic</label>
-        <label id="executive"><input type="radio" name="radio"/>Executive</label>
-    </section>
+    <FlightClass/>
     <section id="miles"  className="my-4 text-stone-200 ">
         <label for="" className="block mb-2">Use air miles:</label>
         <input type="range" className="accent-cyan-900 w-full accent-h-6"></input>
@@ -54,4 +52,4 @@ const HomeBodyTourBox = () => {
   )
 }
 
-export default HomeBodyTourBox
+export default HomeTourBox

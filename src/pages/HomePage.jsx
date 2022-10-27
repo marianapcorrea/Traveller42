@@ -1,10 +1,10 @@
 import React from 'react'
-import HomeBody from '../components/HomeBody'
+import HomeMain from '../components/HomePage/HomeMain'
 
 const HomePage = () => {
   return (
 <>
-    <HomeBody/>
+    <HomeMain/>
 </>
   )
 }
